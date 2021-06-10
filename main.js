@@ -20,3 +20,21 @@ function playerChoice() {
 }
 
 
+function computerChoice() {
+
+    // array with choice options 
+    let list = ["rock", "paper", "scissor"]; 
+
+    // computer make a guess with radom the function to pick some of the array indices.
+
+    return list[random(list.length)];
+
+}
+
+
+function random(max) {
+
+    return Math.floor(Math.random() * max);
+}
+
+computerChoice();
